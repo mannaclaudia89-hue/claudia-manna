@@ -193,6 +193,272 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 .btn-back:hover { color:var(--plum); border-color:var(--plum-lt); }
 
 @keyframes floatel { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+
+/* ════════════════════════════════════════
+   RESPONSIVE VERSION — desktop unchanged,
+   mobile opens the card directly
+   ════════════════════════════════════════ */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #s-qr {
+    display: none !important;
+  }
+
+  #s-card {
+    display: flex !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    position: relative !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .screen {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    grid-template-rows: auto auto auto;
+    overflow: hidden;
+    padding: 26px 0 0;
+  }
+
+  .hero-peony {
+    top: 48% !important;
+    left: 50% !important;
+    width: min(440px, 112vw) !important;
+    opacity: 0.13 !important;
+    transform: translate(-50%, -50%) scale(0.95) !important;
+  }
+
+  .hero-top {
+    padding: 42px 16px 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-role {
+    font-size: 11px;
+    letter-spacing: 0.30em;
+    white-space: nowrap;
+  }
+
+  .hero-spec {
+    font-size: 10px;
+    letter-spacing: 0.17em;
+    white-space: nowrap;
+  }
+
+  .hero-name {
+    font-size: clamp(38px, 12vw, 54px);
+    line-height: 1.05;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-phd {
+    font-size: 22px;
+  }
+
+  .hero-role,
+  .hero-spec,
+  .hero-name,
+  .hero-phd,
+  .elements-float,
+  .hero-divider,
+  .skill-item,
+  .hero-bottom {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-centre {
+    padding: 20px 14px 0;
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .elements-float {
+    width: 96vw;
+    justify-content: center;
+    transform: translateY(-10px) !important;
+  }
+
+  .el {
+    min-width: 15.4vw;
+    padding: 8px 3px 7px;
+  }
+
+  .el-num {
+    font-size: 6px;
+  }
+
+  .el-sym {
+    font-size: 22px;
+  }
+
+  .el-name {
+    font-size: 5.2px;
+    letter-spacing: 0.07em;
+  }
+
+  .hero-divider {
+    width: 64vw;
+    margin-top: -4px;
+  }
+
+  .hero-skills {
+    width: 94vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 6px;
+  }
+
+  .skills-col-rule {
+    display: none;
+  }
+
+  .skills-col,
+  .skills-col:first-child,
+  .skills-col:last-child {
+    padding: 0 !important;
+    margin-left: 0 !important;
+    transform: none !important;
+    text-align: center !important;
+    align-self: center !important;
+  }
+
+  .skills-col:first-child {
+    order: 1;
+  }
+
+  .skills-col:last-child {
+    order: 2;
+  }
+
+  .skills-label,
+  .skills-col:first-child .skills-label {
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.23em;
+  }
+
+  .skill-item,
+  .skills-col:first-child .skill-item:nth-child(2),
+  .skills-col:first-child .skill-item:nth-child(3),
+  .skills-col:first-child .skill-item:nth-child(4),
+  .skills-col:last-child .skill-item:nth-child(2),
+  .skills-col:last-child .skill-item:nth-child(3) {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .skill-title {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    line-height: 1.35;
+  }
+
+  .skill-sub {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .skill-title span,
+  .skill-sub span {
+    white-space: normal !important;
+  }
+
+  .hero-bottom {
+    margin-top: 28px;
+    padding: 12px 14px 24px;
+    gap: 12px;
+  }
+
+  .hero-contact {
+    transform: none !important;
+    gap: 8px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-sep {
+    display: none;
+  }
+
+  .hero-contact span,
+  .hero-contact a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-footer-row {
+    transform: none !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-pills {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .btn-back {
+    font-size: 11px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-name {
+    font-size: 38px;
+  }
+
+  .el-sym {
+    font-size: 20px;
+  }
+
+  .skill-title {
+    font-size: 12px;
+  }
+
+  .skill-sub {
+    font-size: 13px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -374,5 +640,24 @@ function animateCard() {
 
 document.addEventListener("keydown", e => { if (e.key==="Escape") resetCard(); });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) {
+    var qr = document.getElementById("s-qr");
+    var card = document.getElementById("s-card");
+    if (qr) qr.classList.add("hidden");
+    if (card) card.classList.remove("hidden");
+
+    var peony = document.getElementById("peony");
+    if (peony) peony.classList.add("bloomed");
+
+    document.querySelectorAll(".hero-top > *, .elements-float, .hero-divider, .skill-item, .hero-bottom").forEach(function (el) {
+      el.classList.add("revealed");
+    });
+  }
+});
+</script>
+
 </body>
 </html>
