@@ -75,13 +75,13 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 }
 .hero-role {
   font-family:"Cormorant SC",serif; font-size:16px; letter-spacing:0.35em;
-  color:var(--ink-faint); margin-bottom:4px;
+  color:var(--ink-mid); margin-bottom:4px;
   opacity:0; transform:translateY(-8px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .hero-spec {
   font-family:"Cormorant SC",serif; font-size:14px; letter-spacing:0.22em;
-  color:var(--ink-faint); margin-bottom:16px;
+  color:var(--ink-mid); margin-bottom:16px;
   opacity:0; transform:translateY(-8px);
   transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
 }
@@ -223,7 +223,7 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    padding: 34px 18px 28px;
+    padding: 24px 18px 18px;
     background:
       radial-gradient(circle at 50% 26%, rgba(250,246,250,0.98) 0%, rgba(232,221,232,0.92) 55%, rgba(232,221,232,1) 100%);
     color: var(--ink);
@@ -258,8 +258,8 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 
   .mobile-hero {
     text-align: center;
-    padding-top: 18px;
-    margin-bottom: 18px;
+    padding-top: 10px;
+    margin-bottom: 10px;
   }
 
   .mobile-kicker,
@@ -274,15 +274,15 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
   .mobile-kicker {
     font-size: 13px;
     letter-spacing: 0.34em;
-    color: var(--ink-faint);
+    color: var(--ink-mid);
     margin-bottom: 7px;
   }
 
   .mobile-subkicker {
     font-size: 11px;
     letter-spacing: 0.18em;
-    color: var(--ink-faint);
-    margin-bottom: 22px;
+    color: var(--ink-mid);
+    margin-bottom: 10px;
     white-space: nowrap;
   }
 
@@ -307,14 +307,14 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: min(360px, 94vw);
-    margin: 18px auto 24px;
+    margin: 10px auto 14px;
     border: 0.5px solid var(--rule);
     background: rgba(250,246,250,0.72);
     backdrop-filter: blur(5px);
   }
 
   .mobile-elements div {
-    min-height: 82px;
+    min-height: 62px;
     border-right: 0.5px solid var(--rule);
     border-bottom: 0.5px solid var(--rule);
     display: flex;
@@ -340,7 +340,7 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 
   .mobile-elements strong {
     font-weight: 300;
-    font-size: 38px;
+    font-size: 31px;
     line-height: 0.9;
     color: var(--ink);
   }
@@ -354,9 +354,9 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 
   .mobile-section {
     width: min(380px, 92vw);
-    margin: 0 auto 22px;
+    margin: 0 auto 14px;
     text-align: center;
-    padding: 18px 14px 16px;
+    padding: 14px 14px 12px;
     background: rgba(250,246,250,0.44);
     border-top: 0.5px solid rgba(212,188,212,0.75);
     border-bottom: 0.5px solid rgba(212,188,212,0.75);
@@ -366,16 +366,16 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
     font-size: 15px;
     letter-spacing: 0.28em;
     color: var(--ink-mid);
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .mobile-section p {
     font-family: "Cormorant SC", serif;
     font-size: 15px;
     letter-spacing: 0.08em;
-    line-height: 1.45;
+    line-height: 1.28;
     color: var(--plum);
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   .mobile-section .mobile-note {
@@ -388,11 +388,11 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
 
   .mobile-contact {
     width: min(380px, 92vw);
-    margin: 26px auto 18px;
+    margin: 14px auto 10px;
     text-align: center;
     display: grid;
     gap: 8px;
-    padding-top: 16px;
+    padding-top: 12px;
     border-top: 0.5px solid var(--rule);
   }
 
@@ -406,13 +406,13 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
   .mobile-footer {
     text-align: center;
     color: #a58aa8;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   .mobile-footer > div:first-child {
     font-style: italic;
-    font-size: 21px;
-    margin-bottom: 12px;
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .mobile-pills {
@@ -523,7 +523,8 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
       <div class="qr-divider"><div class="qr-divider-line"></div><div class="qr-divider-dot"></div><div class="qr-divider-line"></div></div>
       <div class="qr-name">Claudia Manna, Ph.D</div>
       <div class="qr-role">Organic Chemist</div>
-      <div class="qr-spec">Cosmetic &amp; Pharmaceutical Sciences</div>
+      <div class="qr-spec">Organic &amp; Analytical Chemistry</div>
+      <div class="qr-spec">Pharmaceutical &amp; Cosmetic Sciences</div>
     </div>
   </div>
 </div>
@@ -537,7 +538,7 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
     <!-- TOP: name -->
     <div class="hero-top">
       <div class="hero-role" id="h-role">Organic Chemist</div>
-      <div class="hero-spec" id="h-spec">Cosmetic &amp; Pharmaceutical Sciences</div>
+      <div class="hero-spec" id="h-spec">Pharmaceutical &amp; Cosmetic Sciences</div>
       <div class="hero-name" id="h-name">Claudia Manna, <span class="hero-phd-inline" id="h-phd">Ph.D</span></div>
     </div>
 
@@ -566,25 +567,20 @@ html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); font
             <div class="skill-title">Organic &amp; Analytical Chemistry</div>
           </div>
           <div class="skill-item" id="sk2">
-            <div class="skill-title">Drug Design &amp; Analytical Development</div>
-          </div>
-          <div class="skill-item" id="sk3">
-            <div class="skill-title"><span style="white-space:nowrap;">Structure Elucidation &amp; Scientific Research</span></div>
+            <div class="skill-title">Pharmaceutical &amp; Cosmetic Sciences</div>
           </div>
         </div>
         <div class="skills-col-rule"></div>
         <div class="skills-col">
-          <span class="skills-label">Developing Expertise In</span>
+          <span class="skills-label">&nbsp;</span>
+          <div class="skill-item" id="sk3">
+            <div class="skill-title">Scientific Research</div>
+          </div>
           <div class="skill-item" id="sk4">
-            <div class="skill-title">Cosmetic Formulation Science</div>
-            <div class="skill-sub">UCR Riverside · "Cosmetic Chemistry"</div>
+            <div class="skill-title">Formulation &amp; Product Development</div>
           </div>
-          <div class="skill-item" id="sk5">
-            <div class="skill-title">Sustainable Active Ingredients</div>
-          </div>
-          <div class="skill-item" id="sk6">
-            <div class="skill-title"><span style="white-space:nowrap;">Cosmetic Innovation, Safety &amp; Regulation</span></div>
-          </div>
+          <div class="skill-item" id="sk5" style="display:none;"></div>
+          <div class="skill-item" id="sk6" style="display:none;"></div>
         </div>
       </div>
 
@@ -669,7 +665,7 @@ document.addEventListener("keydown", e => { if (e.key==="Escape") resetCard(); }
 
   <section class="mobile-hero">
     <div class="mobile-kicker">Organic Chemist</div>
-    <div class="mobile-subkicker">Cosmetic &amp; Pharmaceutical Sciences</div>
+    <div class="mobile-subkicker">Pharmaceutical &amp; Cosmetic Sciences</div>
     <div class="mobile-name-row">
       <div class="mobile-title-shared">Claudia Manna,</div>
       <div class="mobile-title-shared">Ph.D</div>
@@ -681,16 +677,9 @@ document.addEventListener("keydown", e => { if (e.key==="Escape") resetCard(); }
   <section class="mobile-section">
     <h2>Specialized In</h2>
     <p>Organic &amp; Analytical Chemistry</p>
-    <p>Drug Design &amp; Analytical Development</p>
-    <p>Structure Elucidation &amp; Scientific Research</p>
-  </section>
-
-  <section class="mobile-section">
-    <h2>Developing Expertise In</h2>
-    <p>Cosmetic Formulation Science</p>
-    <p class="mobile-note">UCR Riverside · “Cosmetic Chemistry”</p>
-    <p>Sustainable Active Ingredients</p>
-    <p>Cosmetic Innovation, Safety &amp; Regulation</p>
+    <p>Pharmaceutical &amp; Cosmetic Sciences</p>
+    <p>Scientific Research</p>
+    <p>Formulation &amp; Product Development</p>
   </section>
 
   <section class="mobile-contact">
